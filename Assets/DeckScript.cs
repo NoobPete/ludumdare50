@@ -27,7 +27,7 @@ public class DeckScript : MonoBehaviour
 
     public void RemoveCard(CardScript cs)
     {
-        list.Add(cs);
+        list.Remove(cs);
         cs.transform.parent = null;
         cs.owner = null;
     }

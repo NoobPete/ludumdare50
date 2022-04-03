@@ -22,9 +22,8 @@ public class HandScript : DeckScript
 
     public override Vector3 GetCardPosition(CardScript cs, bool hovered)
     {
-        float middleOffset = 0.5f * list.Count;
         int index = list.IndexOf(cs);
-        return index * offset - new Vector3(0, offset.y * middleOffset, 0) + (hovered ? offsetHover : Vector3.zero);
+        return index * offset - offset * 0.5f * list.Count + (hovered ? offsetHover : Vector3.zero);
     }
 
     public override Quaternion GetCardRotation(CardScript cs, bool hovered)
