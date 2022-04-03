@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Card : MonoBehaviour
+public class CardScript : MonoBehaviour
 {
     public CardScriptableObject template;
 
