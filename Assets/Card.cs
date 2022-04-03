@@ -35,17 +35,7 @@ public class Card : MonoBehaviour
         text.text = template.text;
         image.sprite = template.sprite;
         image.gameObject.SetActive(image.sprite != null);
-
-
-        switch(template.type)
-        {
-            case CardType.Science:
-                SetCardColor(Color.blue);
-                break;
-            case CardType.Tech:
-                SetCardColor(Color.green);
-                break;
-        }
+        SetCardColor(GameMaster.GetColor((int)template.type));
     }
 
     void SetCardColor(Color color)
