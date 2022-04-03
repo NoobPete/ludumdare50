@@ -17,13 +17,16 @@ public class HandScript : DeckScript
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetMouseButtonDown(1))
+        {
+            selected = null;
+        }
     }
 
     public override Vector3 GetCardPosition(CardScript cs, bool hovered)
     {
         int index = list.IndexOf(cs);
-        return index * offset - offset * 0.5f * list.Count + (hovered ? offsetHover : Vector3.zero);
+        return index * offset - offset * 0.5f * list.Count + (hovered || cs == selected ? offsetHover : Vector3.zero);
     }
 
     public override Quaternion GetCardRotation(CardScript cs, bool hovered)

@@ -333,7 +333,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.68417335, y: 0.000000042285276, z: -0.00000004266357, w: 0.72931945}
-  m_LocalPosition: {x: 8.35, y: 11.96, z: 2.68}
+  m_LocalPosition: {x: 8.35, y: 17.85, z: 2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list: []
   offset: {x: 0, y: 0.05, z: 1.6}
-  offsetHover: {x: -0.8, y: 0, z: -0.3}
+  offsetHover: {x: -1, y: 0, z: -0.3}
   selected: {fileID: 0}
 --- !u!4 &981469830
 Transform:
@@ -406,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981469828}
   m_LocalRotation: {x: -0, y: 0.7072415, z: -0, w: 0.7069722}
-  m_LocalPosition: {x: 8.35, y: 3.29, z: -0.82}
+  m_LocalPosition: {x: 8.35, y: 3.29, z: -1.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -466,5 +466,5 @@ MonoBehaviour:
   - {r: 0.6784314, g: 0.854902, b: 0.58431375, a: 0}
   - {r: 0.83921576, g: 0.83921576, b: 0.83921576, a: 0}
   locationSpaceHor: 2.4
-  locationSpaceVer: 4.2
+  locationSpaceVer: 3.9
   locationLookup: 02000000050000000b000000020000000a00000006000000080000000400000002000000030000000900000002000000
