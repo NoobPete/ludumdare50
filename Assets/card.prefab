@@ -776,6 +776,9 @@ MonoBehaviour:
   - {fileID: 9029872503285241579}
   - {fileID: 7476686901325482466}
   - {fileID: 519189326302198954}
+  owner: {fileID: 0}
+  positionDamp: 0.1
+  rotationDamp: 5
 --- !u!65 &4853244253105449718
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -3,9 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LocationScript : MonoBehaviour
+public class LocationScript : DeckScript
 {
     public TMPro.TextMeshProUGUI text;
+    public static int locationCount = 0;
+    public GameMaster gm;
+
+    public Vector3 offset = new Vector3(0f, 2f, 0.3f);
+    public Vector3 rotation = new Vector3(1f, 0f, 0f);
 
     private int[] _triggers;
     public int[] Triggers
@@ -14,6 +19,7 @@ public class LocationScript : MonoBehaviour
         {
             _triggers = value;
             UpdateText(value);
+            this.name = "Location " + locationCount++ + " - " + string.Join(", ", value);
         }
         get { return _triggers; }
     }
@@ -40,12 +46,27 @@ public class LocationScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        gm = GameMaster.main;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    private void OnMouseDown()
+    {
+        gm.locationClicked(this);
+    }
+
+    public override Vector3 GetCardPosition(CardScript cs, bool hovered)
+    {
+        return offset;
+    }
+
+    public override Quaternion GetCardRotation(CardScript cs, bool hovered)
+    {
+        return this.transform.rotation * Quaternion.Euler(rotation);
     }
 }

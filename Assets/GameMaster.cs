@@ -7,12 +7,15 @@ public class GameMaster : MonoBehaviour
 {
     public GameObject cardBase;
     public GameObject locationTemplate;
+    public HandScript hand;
     public Color[] colors;
     public static GameMaster main;
 
     public float locationSpaceHor;
     public float locationSpaceVer;
     public int[] locationLookup;
+
+    private int cardNumber = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -54,17 +57,25 @@ public class GameMaster : MonoBehaviour
         }
     }
 
+    public void locationClicked(LocationScript locationScript)
+    {
+        CardScript card = hand.selected;
+        if (card != null)
+        {
+            hand.RemoveCard(card);
+            hand.selected = null;
+            locationScript.AddCard(card);
+        }
+    }
+
     CardScript CreateCard(CardScriptableObject template)
     {
         GameObject o = Instantiate(cardBase);
         CardScript c = o.GetComponent<CardScript>();
+        o.name = cardBase.name + "(" + cardNumber++ + ")";
         c.setTemplate(template);
+        hand.AddCard(c);
         return c;
-    }
-
-    internal static Color GetColor(CardType type)
-    {
-        throw new NotImplementedException();
     }
 
     // Update is called once per frame

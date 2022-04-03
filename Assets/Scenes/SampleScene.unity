@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657934, g: 0.49641448, b: 0.57481915, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -209,13 +209,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.109541506, y: -0.8753342, z: 0.40817532, w: 0.23491216}
   m_LocalPosition: {x: 1.57, y: 0.63, z: -4.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -149.955, z: 0}
 --- !u!1 &845544020
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +365,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 86.341, y: 0, z: 0}
+--- !u!1 &981469828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981469830}
+  - component: {fileID: 981469829}
+  m_Layer: 0
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &981469829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981469828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a75706afe1cfd24a891fe9f2bc41f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list: []
+  offset: {x: 0, y: 0.05, z: 1.6}
+  offsetHover: {x: -0.8, y: 0, z: -0.3}
+--- !u!4 &981469830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981469828}
+  m_LocalRotation: {x: -0, y: 0.7072415, z: -0, w: 0.7069722}
+  m_LocalPosition: {x: 4.9800005, y: 3.29, z: -0.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 90.022, z: 0}
 --- !u!1 &1160171787
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardBase: {fileID: 8933886469829111274, guid: e420b47cc51df3b4f8d91b335a68aa53, type: 3}
   locationTemplate: {fileID: 1139500281322218496, guid: 4cb29172d84ba2749a8e302957d06468, type: 3}
+  hand: {fileID: 981469829}
   colors:
   - {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
   - {r: 0.9921569, g: 0.82745105, b: 0.3647059, a: 0}
