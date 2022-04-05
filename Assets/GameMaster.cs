@@ -120,6 +120,11 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pollution > 250)
+        {
+            rollState = DiceState.ENDED;
+        }
+
         if (rollState == DiceState.ENDED)
         {
             endgame.gameObject.SetActive(true);
