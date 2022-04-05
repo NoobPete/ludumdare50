@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f400b47f45b9cfd478d2e56050b0c7c8, type: 3}
+  m_Name: Solar Farm
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
+  text: Generates 2 power and creates 1 happiness
+  sprite: {fileID: 21300000, guid: 469c929d198d2124388ed6cae9990f3f, type: 3}
+  type: 1
+  powerUsage: 0
+  powerGeneration: 2
+  happiness: 1
+  people: 0
+  housingNextToHappiness: 0
+  housingOnMapHappiness: 0
+  peopleOnMapHappiness: 0

@@ -10,9 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f400b47f45b9cfd478d2e56050b0c7c8, type: 3}
-  m_Name: Trailer
+  m_Name: Luxury House
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
-  text: And also the descirption might no be amazing and therefore a problem that
-    needs to be solved if it does not wrap
-  sprite: {fileID: 0}
+  text: All you need and much more. Can house a family of 4. Creates 3 happiness
+    and uses 2 power.
+  sprite: {fileID: 21300000, guid: 82bedfa3cc0c453458e51ad7c444ff70, type: 3}
   type: 4
+  powerUsage: 2
+  powerGeneration: 0
+  happiness: 3
+  people: 4
+  housingNextToHappiness: 0
+  housingOnMapHappiness: 0
+  peopleOnMapHappiness: 0

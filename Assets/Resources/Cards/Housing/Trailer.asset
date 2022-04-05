@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f400b47f45b9cfd478d2e56050b0c7c8, type: 3}
+  m_Name: Trailer
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
+  text: Houses two people
+  sprite: {fileID: 21300000, guid: c30778225ff4a914d8c11cf07a58673e, type: 3}
+  type: 4
+  powerUsage: 0
+  powerGeneration: 0
+  happiness: 0
+  people: 2
+  housingNextToHappiness: 0
+  housingOnMapHappiness: 0
+  peopleOnMapHappiness: 0

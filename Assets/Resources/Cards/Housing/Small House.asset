@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f400b47f45b9cfd478d2e56050b0c7c8, type: 3}
+  m_Name: Small House
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
+  text: A small house made for two.
+  sprite: {fileID: 21300000, guid: e99b1e5c262acc44abee2b8cb8be7d4e, type: 3}
+  type: 4
+  powerUsage: 0
+  powerGeneration: 0
+  happiness: 0
+  people: 2
+  housingNextToHappiness: 0
+  housingOnMapHappiness: 0
+  peopleOnMapHappiness: 0

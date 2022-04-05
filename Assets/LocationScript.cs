@@ -69,4 +69,9 @@ public class LocationScript : DeckScript
     {
         return this.transform.rotation * Quaternion.Euler(rotation);
     }
+
+    public override void CardClicked(CardScript cs)
+    {
+        gm.locationClicked(this);
+    }
 }

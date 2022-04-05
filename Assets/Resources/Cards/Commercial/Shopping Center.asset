@@ -10,8 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f400b47f45b9cfd478d2e56050b0c7c8, type: 3}
-  m_Name: Basic Shop
+  m_Name: Shopping Center
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManagerScriptableObject
-  text: Noice
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  text: Creates 3 happines for every housing. Consumes 4 power.
+  sprite: {fileID: 21300000, guid: 56d6dff66bb44874c92850e30632c0ce, type: 3}
   type: 3
+  powerUsage: 4
+  powerGeneration: 0
+  happiness: 0
+  people: 0
+  housingNextToHappiness: 0
+  housingOnMapHappiness: 3
+  peopleOnMapHappiness: 0
